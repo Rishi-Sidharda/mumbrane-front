@@ -30,9 +30,13 @@ export default function Home() {
               <span className="hidden sm:inline text-[10px] font-bold tracking-widest text-neutral-400 uppercase">
                 Development Phase: 0.1-Alpha
               </span>
-              <button className="px-5 py-2 rounded-md bg-neutral-900 text-white text-sm font-medium hover:bg-neutral-800 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-400">
+              <a
+                href="https://x.com/rishi_sidharda"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-5 py-2 rounded-md bg-neutral-900 text-white text-sm font-medium hover:bg-neutral-800 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-400">
                 Follow on X
-              </button>
+              </a>
             </div>
           </div>
         </nav>
@@ -61,12 +65,19 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <button className="px-6 py-3 rounded-md bg-neutral-900 text-white font-medium hover:translate-y-[-1px] hover:shadow-lg transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-neutral-400">
+            <a
+              href="https://x.com/rishi_sidharda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-3 rounded-md bg-neutral-900 text-white font-medium hover:translate-y-[-1px] hover:shadow-lg transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-neutral-400">
               Get Architecture Updates
-            </button>
-            <button className="px-6 py-3 rounded-md border cursor-pointer border-neutral-300 font-medium hover:bg-neutral-50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-300">
+            </a>
+
+            <a
+              href="mailto:rishisidharda.n@gmail.com"
+              className="inline-block px-6 py-3 rounded-md border cursor-pointer border-neutral-300 font-medium hover:bg-neutral-50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-300">
               Contact founder
-            </button>
+            </a>
           </div>
         </section>
 
@@ -186,9 +197,11 @@ export default function Home() {
               Join our technical mailing list for architectural deep-dives and
               early repo access.
             </p>
-            <button className="px-8 py-3 rounded-md cursor-pointer bg-white text-neutral-900 font-medium hover:translate-y-[-1px] hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <a
+              href="mailto:rishisidharda.n@gmail.com?subject=Private%20Updates&body=Hi%20Rishi,"
+              className="inline-block px-8 py-3 rounded-md cursor-pointer bg-white text-neutral-900 font-medium hover:translate-y-[-1px] hover:shadow-lg transition-all duration-300 hover:scale-105">
               Get Private Updates
-            </button>
+            </a>
           </div>
         </section>
 
