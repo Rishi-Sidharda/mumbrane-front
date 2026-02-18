@@ -1,65 +1,128 @@
-import Image from "next/image";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <Head>
+        <title>Mumbrane — Digital Employees</title>
+        <meta
+          name="description"
+          content="Mumbrane builds digital employees powered by a Cognitive OS."
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
+      </Head>
+
+      <div className="min-h-screen bg-[#FAFAF9] text-[#111111] font-sans">
+        {/* Navbar */}
+        <nav className="sticky top-0 z-50 bg-[#FAFAF9]/80 backdrop-blur border-b border-black/5">
+          <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
+            <div className="text-lg font-medium tracking-tight">Mumbrane</div>
+            <div className="hidden md:flex items-center gap-8 text-sm text-black/70">
+              <a href="#product" className="hover:text-black">
+                Product
+              </a>
+              <a href="#difference" className="hover:text-black">
+                Why Mumbrane
+              </a>
+              <a href="#vision" className="hover:text-black">
+                Vision
+              </a>
+            </div>
+            <div className="flex items-center gap-3">
+              <button className="px-4 py-1.5 text-sm rounded-full bg-black text-white">
+                In development
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        {/* Hero */}
+        <section className="max-w-7xl mx-auto px-8 pt-40 pb-32">
+          <h1 className="text-5xl md:text-6xl font-medium tracking-tight leading-[1.05] max-w-4xl">
+            Digital employees
+            <br /> built on a Cognitive OS
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-8 text-lg text-black/60 max-w-2xl">
+            Mumbrane builds digital employees that think, remember, collaborate,
+            and operate like humans — with enterprise-grade reliability and
+            governance.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+          <div className="mt-12 flex gap-4">
+            <button className="px-6 py-3 rounded-full bg-black text-white text-sm">
+              Private development
+            </button>
+            <button className="px-6 py-3 rounded-full border border-black/10 text-sm text-black/70">
+              Learn more
+            </button>
+          </div>
+        </section>
+
+        {/* Product */}
+        <section id="product" className="max-w-7xl mx-auto px-8 py-28">
+          <h2 className="text-3xl font-medium max-w-3xl">
+            Not an agent. Not a workflow.
+          </h2>
+          <p className="mt-6 text-black/60 max-w-3xl">
+            Mumbrane is a Cognitive Operating System that treats an LLM’s
+            context window the same way humans use working memory — as a core
+            system primitive. Memory, reasoning, collaboration, and
+            accountability are built into the OS itself.
+          </p>
+        </section>
+
+        {/* Difference */}
+        <section id="difference" className="bg-white border-y border-black/5">
+          <div className="max-w-7xl mx-auto px-8 py-28">
+            <h2 className="text-3xl font-medium">Why Mumbrane</h2>
+            <div className="grid md:grid-cols-3 gap-12 mt-14">
+              <div>
+                <h3 className="text-base font-medium">Reliability</h3>
+                <p className="mt-3 text-black/60">
+                  Deterministic behavior grounded in explicit cognitive
+                  structure — not brittle prompt chains.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-base font-medium">Auditability</h3>
+                <p className="mt-3 text-black/60">
+                  Every action, memory, and decision is inspectable and
+                  traceable across time.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-base font-medium">Governance</h3>
+                <p className="mt-3 text-black/60">
+                  Clear permissions, boundaries, and accountability — enforced
+                  at the system level.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Vision */}
+        <section id="vision" className="max-w-7xl mx-auto px-8 py-28">
+          <h2 className="text-3xl font-medium max-w-3xl">
+            A replacement for teams
+          </h2>
+          <p className="mt-6 text-black/60 max-w-3xl">
+            A Mumbrane digital employee can remember conversations across time,
+            attend meetings with other digital employees, and collaborate
+            asynchronously like a real team member.
+          </p>
+          <p className="mt-6 text-black/60 max-w-3xl">
+            In practice, one digital employee replaces the output of an entire
+            team — without the overhead or operational risk.
+          </p>
+        </section>
+
+        {/* Footer */}
+        <footer className="border-t border-black/5">
+          <div className="max-w-7xl mx-auto px-8 py-16 flex flex-col md:flex-row justify-between text-sm text-black/50">
+            <div>© {new Date().getFullYear()} Mumbrane</div>
+            <div className="mt-4 md:mt-0">Digital labor, redefined</div>
+          </div>
+        </footer>
+      </div>
+    </>
   );
 }
