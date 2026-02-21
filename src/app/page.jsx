@@ -218,6 +218,9 @@ export default function Home() {
               <span className="cursor-not-allowed transition-colors duration-200 hover:text-neutral-400">
                 Documentation
               </span>
+              <span className="cursor-not-allowed transition-colors duration-200 hover:text-neutral-400">
+                Rishi Sidharda
+              </span>
             </div>
           </div>
         </footer>
